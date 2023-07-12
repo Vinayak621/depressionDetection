@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Binary Classification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      label {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      textarea {
+        width: 400px;
+        height: 150px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Binary Classification</h1>
+    <p>Please enter text related to depression and get the prediction:</p>
+    <form action="/predict" method="post">
+      <label for="text">Enter Text:</label><br />
+      <textarea name="text" rows="4" cols="50"></textarea><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
